@@ -1,18 +1,76 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <ul v-for="item in items" :key="item.message">
+      {{
+        item.message
+      }}
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
+  name: 'Home',
+  components: {},
+  data: function() {
+    return {
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' },
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ]
+    };
   }
 };
 </script>
+
+<style>
+.home {
+  text-align: center;
+}
+</style>
